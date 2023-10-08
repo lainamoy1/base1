@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2048 Game</title>
+  <!-- Include the CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><span>2</span><span>0</span><span>4</span><span>8</span></h1>
+    </div>
+  </header>
+  <div class="container">
+    <div class="directions">
+      <p><strong>HOW TO PLAY:</strong> Combine tiles with the same number by moving them in four directions using arrow keys or swipe gestures. Your goal is to reach the 2048 tile by merging smaller tiles.</p>
+    </div>
+    <div class="scores">
+      <div class="score-container best-score">
+        best:
+        <div class="score">
+          <div id="bestScore">0</div>
+        </div>
+      </div>
+      <div class="score-container">
+        score:
+        <div class="score">
+          <div id="score">0</div>
+          <div class="add" id="add"></div>
+        </div>
+      </div>
+    </div>
+    <div class="game">
+      <div id="tile-container" class="tile-container"></div>
+      <div class="end" id="end">Game Over<div class="monkey">🙈</div><button class="btn not-recommended__item js-restart-btn" id="try-again">Try Again</button></div>
+    </div>
+    <div class="not-recommended">
+      <button class="btn not-recommended__item js-restart-btn" id="restart">Restart Game</button>
+      <span class="not-recommended__annotation"></span>
+    </div>
+    <!-- Add buttons for left, right, up, and down -->
+    <div class="controls">
+      <button class="control-button" id="move-left">Left</button>
+      <button class="control-button" id="move-right">Right</button>
+      <button class="control-button" id="move-up">Up</button>
+      <button class="control-button" id="move-down">Down</button>
+    </div>
+  </div>
+  <!-- Include the JavaScript file at the end of the body to ensure it loads after the HTML content -->
+  <script src="script.js"></script>
+</body>
+</html>
